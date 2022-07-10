@@ -1,6 +1,6 @@
 node{
   stage('SCM'){
-  
+  git branch: 'release', url: 'https://github.com/shivardy0692/finn.git'
   }
   stage('Maven Package'){
   def MvnHome = tool name: 'MAVEN', type: 'maven'
