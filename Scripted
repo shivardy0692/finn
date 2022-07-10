@@ -1,0 +1,9 @@
+node{
+  stage('SCM'){
+  
+  }
+  stage('Maven Package'){
+  def MvnHome = tool name: 'MAVEN', type: 'maven'
+  sh "${MvnHome}/bin/mvn package"
+  }
+}
