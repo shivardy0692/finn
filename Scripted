@@ -7,6 +7,6 @@ node{
   sh "${MvnHome}/bin/mvn package"
   }
   stage('Deployment'){
-  sh "scp -o StrictHostKeyChecking=no target/finn.war tomcat@172.31.10.54:/home/tomcat/tomcat/webapps"
+  sh "scp -o StrictHostKeyChecking=no target/finn.war tomcat/tomcat@172.31.10.54:/home/tomcat/tomcat/webapps"
   }
 }
